@@ -1,15 +1,5 @@
 #!bin/bash
 
-# • Scrivere uno script che abbia le funzionalità di rm, ma che invece di cancellare
-# definitivamente i file li sposti in una directory .trash nella vostra home
-# • Usage:
-# • saferm –L elenca il contenuto del cestino
-# • saferm –P svuota (“purge”) il cestino
-# • saferm –R files ripristina il file file
-# • saferm files rimuove i file spostandoli nel cestino
-# • Nota: le varie opzioni sono esclusive; ovvero, non si può lanciare un comando
-# saferm –L –P ; generate un errore e stampate l’usage dello script nel caso
-
 trash="/home/$USER/.trash"
 
 mkdir -p $trash

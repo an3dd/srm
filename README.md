@@ -25,7 +25,9 @@ Rename the script as 'srm' and move it into '.local/bin' (create it if doesn't e
 Copy/Paste:
 
 mkdir -p /home/$USER/.local/bin
+
 mv srm.sh srm
+
 mv srm /home/$USER/.local/bin
 
 Now you can use it in any folder.
