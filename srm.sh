@@ -38,6 +38,8 @@ if [[ "$1" != "" ]]; then
         date=$(date -r $trash/$2 +%s)
         mv $trash/$2 $trash/$2.$date
         mv $trash/$2.$date .
+      else
+        mv $trash/$2 .
       fi
     else
       echo "Invalid command: you can use 'saferm -h' to show available commands"
