@@ -14,9 +14,9 @@ if [[ "$1" != "" ]]; then
       ls $trash
     elif [[ "$1" == "-h" ]]; then
       echo "Available commands: "
-      echo "saferm -L (to show trash content)"
-      echo "saferm -P (to remove trash content)"
-      echo "saferm -R file (to restore 'file' here)"
+      echo "srm -L (to show trash content)"
+      echo "srm -P (to remove trash content)"
+      echo "srm -R file (to restore 'file' here)"
     elif [[ "$1" != -* ]]; then
       if [[ -e "$trash/$1" ]]; then
         # to handle the duplicate name condition in the trash
@@ -27,10 +27,10 @@ if [[ "$1" != "" ]]; then
         mv $1 $trash
       fi
     else
-      echo "Invalid command: you can use 'saferm -h' to show available commands"
+      echo "Invalid command: you can use 'srm -h' to show available commands"
     fi
   elif [[ "$2" == -* ]]; then
-    echo "Invalid command: you can use 'saferm -h' to show available commands"
+    echo "Invalid command: you can use 'srm -h' to show available commands"
   else
     if [[ "$1" == "-R" ]]; then
       if [[ -e "./$2" ]]; then
@@ -42,9 +42,9 @@ if [[ "$1" != "" ]]; then
         mv $trash/$2 .
       fi
     else
-      echo "Invalid command: you can use 'saferm -h' to show available commands"
+      echo "Invalid command: you can use 'srm -h' to show available commands"
     fi
   fi
 else
-  echo "Missing parameters: use -h to show available commands"
+  echo "Missing parameters: use 'srm -h' to show available commands"
 fi
