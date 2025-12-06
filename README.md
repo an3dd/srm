@@ -12,7 +12,7 @@ The script create a '.trash' directory in your /home/$USER and move here all fil
 You can:
 - move a file in your '.trash'
 - list the '.trash' content
-- to empty your '.trash'
+- empty your '.trash'
 - restore a file from your '.trash'
 
 You can display available commands with 'srm -h'.
